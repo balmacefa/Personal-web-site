@@ -1,0 +1,57 @@
+$amarillo: #ffea00;
+@import "typewriter";
+h1 {
+    font-family: ambroise-std;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 101px;
+    letter-spacing: -3px;
+    line-height: .9em;
+    text-transform: uppercase;
+    color:#42403d;
+}
+
+h2 {
+    font-family: ambroise-std;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: .05em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color:#42403d;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-family: din-condensed-web;
+    font-weight: 560;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: .05em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #938c84;
+    color:#42403d;
+}
+
+body {
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .025em;
+    line-height: 2.2em;
+    text-transform: none;
+    color: #000;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.divider{
+    margin-top: 60px;
+}
+
+a{
+background: #ffea0078}
