@@ -90,7 +90,6 @@ var list = [{
 // build scene
 var controller = new ScrollMagic.Controller();
 
-
 function newTween(el) {
     new ScrollMagic.Scene({
             triggerElement: el.id,
