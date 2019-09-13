@@ -19,6 +19,17 @@
     <script src="scripts/modernizr.js"></script>
     <!-- endbuild -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147989176-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-147989176-1');
+    </script>
+
 </head>
 
 <body>
@@ -260,23 +271,7 @@
         </div>
         </footer>
     
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                    function() {
-                        (b[l].q = b[l].q || []).push(arguments)
-                    });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = 'https://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-XXXXX-X');
-            ga('send', 'pageview');
-        </script>
+
         <!-- build:js scripts/vendor.js -->
         <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
