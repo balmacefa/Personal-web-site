@@ -6,6 +6,8 @@
 // https://getbootstrap.com/docs/4.0/components/popovers/#example-enable-popovers-everywhere
 // $(function () { $('[data-toggle="popover"]').popover(); });
 console.log('\'Allo \'Allo!');
+console.log('Check my LINKEDIN 👩‍💻👨‍💻');
+console.log('https://www.linkedin.com/in/balmacefa/');
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
@@ -80,6 +82,11 @@ var list = [{
     to: 103
 }, {
     id: '#awards',
+    speed: 1,
+    from: 0,
+    to: 113
+}, {
+    id: '#Line-Highlight-Bookmark',
     speed: 1,
     from: 0,
     to: 113
