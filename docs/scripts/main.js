@@ -12,10 +12,10 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['English', 'Spanish', 'Italian', 'Russian'],
+        labels: ['English', 'Spanish', 'Italian' ],
         datasets: [{
             label: '',
-            data: [85, 100, 70, 2],
+            data: [85, 100, 70],
             backgroundColor: '#938c84'
         }]
     },
