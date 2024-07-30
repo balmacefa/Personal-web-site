@@ -1,1 +1,27 @@
 h1{font-family:ambroise-std;font-weight:900;font-style:normal;font-size:8vw;letter-spacing:-3px;line-height:.9em;text-transform:uppercase;color:#42403d}h2{font-family:ambroise-std;font-weight:700;font-size:25px;color:#42403d;margin-bottom:40px}h2,h3{font-style:normal;letter-spacing:.05em;line-height:1.2em;text-transform:uppercase}h3{font-family:din-condensed-web;font-weight:560;font-size:13px;color:#938c84;color:#42403d}body{font-weight:100;font-style:normal;font-size:15px;letter-spacing:.025em;line-height:2.2em;text-transform:none;color:#000}strong{font-weight:700}.divider{margin-top:60px}a{background:rgba(255,234,0,.47058823529411764)}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #000;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Añadir línea de división entre enlaces */
+.nav-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #ccc; /* Color de la línea de división */
+}
