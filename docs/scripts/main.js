@@ -12,7 +12,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['English', 'Spanish', 'Italian' ],
+        labels: ['English', 'Spanish', 'Italian'],
         datasets: [{
             label: '',
             data: [85, 100, 70],
@@ -35,12 +35,20 @@ var list = [{
     speed: 1,
     from: 0,
     to: 120
-}, {
+},
+{
     id: '#languages',
     speed: 1,
     from: 0,
     to: 120
-}, {
+},
+{
+    id: '#showcase-title',
+    speed: 1,
+    from: 0,
+    to: 130
+},
+{
     id: '#skills',
     speed: 1,
     from: 0,
@@ -99,9 +107,9 @@ var controller = new ScrollMagic.Controller();
 
 function newTween(el) {
     new ScrollMagic.Scene({
-            triggerElement: el.id,
-            duration: 200
-        })
+        triggerElement: el.id,
+        duration: 200
+    })
         // animate color and top border in relation to scroll position
         .setTween(new TimelineMax().add([
             TweenMax.fromTo(el.id, el.speed, {
