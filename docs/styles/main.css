@@ -60,3 +60,12 @@ h1{font-family:ambroise-std;font-weight:900;font-style:normal;font-size:8vw;lett
 .carousel-control-next-icon {
     filter: invert(1);
 }
+
+
+#project_iframe_container iframe{
+    width: 911px;
+    height: 900px;
+    border: solid 1px rgb(69, 69, 69);
+    margin: 0 auto;
+display: block;
+}
