@@ -125,3 +125,47 @@ function newTween(el) {
 list.forEach(el => {
     newTween(el);
 });
+
+
+$(document).ready(function() {
+
+    var projects = [
+        {
+            title: "SIAJ / Integral System of Access to Justice",
+            iframe: '<iframe src="https://docs.google.com/document/d/e/2PACX-1vR_fd4pomFuwOny2oUqaW8_te72GdrLhP2anMAqUyo2HVq2lZq8H2UKijffe82ykSAhnfh_v1fWjD4E/pub?embedded=true"></iframe>'
+        },
+        {
+            title: "IBM & Kyndryl / Multicloud Management Platform",
+            iframe: '<iframe src="https://docs.google.com/document/d/e/2PACX-1vRFJ2QrveGVeG2W5JGS5n3xIsT91x6UJ_0AjS4c82azygTMVc8BTcKvMt0XeVed62UexzltGfd86XRH/pub?embedded=true"></iframe>'
+        },
+        {
+            title: "WhatsApp CRM",
+            iframe: '<iframe src="https://docs.google.com/document/d/e/2PACX-1vQHCM5KiEdNOsX1jcYLwiSGIbSjw0uTzYhGR3K1oOw7o15SwPSBZKn18vXP6TaRzP19BhFtIg33MTNi/pub?embedded=true"></iframe>'
+        }
+        // Agrega más proyectos según sea necesario
+    ];
+
+    projects.forEach(function(project, index) {
+        $('#project-cards').append(
+            `<div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">${project.title}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary view-btn" data-id="${index}">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        );
+    });
+
+    $('.view-btn').click(function() {
+        var index = $(this).data('id');
+        var iframeContent = projects[index].iframe;
+
+        $('#project_iframe_container').html(iframeContent).show();
+    });
+});
